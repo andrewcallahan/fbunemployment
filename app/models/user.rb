@@ -5,5 +5,5 @@ class User < ActiveRecord::Base
   belongs_to :location
 
   has_many :friendships
-  has_many :friends, :through => :friendships, :class_name => "User", :foreign_kay => :friend_id
+  has_many :friends, :through => :friendships, :class_name => "User", :foreign_key => :friend_id
 end
